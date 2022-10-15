@@ -1,12 +1,12 @@
 
 class Animals:
-    def __init__(self, name):
+    def __init__(self, name = 'unknown'):
         self.name = name
 
-    def __race(self, race):
+    def race(self, race = 'unknown'):
         self.race = race
 
-    def _age(self, age):
+    def age(self, age = 'unknown'):
         self.age = age
 
     def print(self):
@@ -21,7 +21,7 @@ class Animals:
         print()
 
 class sea_animal(Animals):
-    def __init__(self, name, max_depth, age):
+    def __init__(self, name = 'unknown', max_depth = 'unknown', age = 'unknown'):
         self.name = name
         self.age = age
         self.max_depth = max_depth
@@ -30,17 +30,25 @@ class sea_animal(Animals):
         print("Имя    :",self.name)
         print("возраст:",self.age)
         print('животное относится к типу:',self.type)
+        print('глубина плавания:',str(self.max_depth)+'м')
         print()
 
 class bird(Animals):
-    def __init__(self, name, max_altitude, age):
+    def __init__(self, name = 'unknown', max_altitude = 'unknown', age = 'unknown'):
         self.name = name
         self.age = age
         self.max_altitude = max_altitude
         self.type = 'птицы'
 
+    def print(self):
+        print("Имя    :",self.name)
+        print("возраст:",self.age)
+        print('животное относится к типу:',self.type)
+        print('высота полёта:',str(self.max_altitude)+'м')
+        print()
+
 class arthropod(Animals):
-    def __init__(self, name, lifetime, age):
+    def __init__(self, name = 'unknown', lifetime = 'unknown', age = 'unknown'):
         self.name = name
         self.age = age
         self.lifetime = lifetime

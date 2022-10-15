@@ -13,5 +13,9 @@ kit.print()
 eagle = bird("desert eagle", 9000, 4)
 eagle.print()
 
-spider = arthropod("tarantul", 0.3, 0.1)
-spider.print()
+shark = sea_animal()
+shark.print()
+
+#
+# spider = arthropod("tarantul", 0.3, 0.1)
+# spider.print()
