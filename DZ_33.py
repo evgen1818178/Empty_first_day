@@ -3,15 +3,15 @@ class Animals:
     def __init__(self, name):
         self.name = name
 
-    def race(self, race):
+    def __race(self, race):
         self.race = race
 
-    def age(self, age):
+    def _age(self, age):
         self.age = age
 
     def print(self):
         print("Имя    :",self.name)
-        # print("раса   :",self.race)
+        print("раса   :",self.race)
         print("возраст:",self.age)
         try:
             if isinstance(self.type, str):
@@ -26,6 +26,11 @@ class sea_animal(Animals):
         self.age = age
         self.max_depth = max_depth
         self.type = 'морские'
+    def print(self):
+        print("Имя    :",self.name)
+        print("возраст:",self.age)
+        print('животное относится к типу:',self.type)
+        print()
 
 class bird(Animals):
     def __init__(self, name, max_altitude, age):
